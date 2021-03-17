@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Modal</title>
+</head>
+<body>
+    <main>
+
+        <button type="button" class="open-btn">OPEN MODAL</button>
+
+
+
+
+        <div class="modal">
+            <p>
+                Hello my name is Mohammed and this is my modal project.
+                I am a self taught developer and this is the one of the 
+                many projects that I have tried to undergo as part of my 
+                journey to become an employed front-end developer. 
+            </p>
+            
+            <button type="button" class="accept"> ACCEPT </button>
+            <button type="button" class="close-btn"> CLOSE BUTTON </button>
+
+        </div>
+    </main>
+
+    <script>
+        const btn = document.querySelector(".open-btn")
+        const mdal = document.querySelector(".modal")
+        const accpt = document.querySelector(".accept")
+        const closeebtn = document.querySelector(".close-btn")
+        
+
+
+        btn.addEventListener('click', function(event){
+            mdal.style.display = 'initial'
+        })
+
+        accpt.addEventListener('click', function(event){
+            mdal.style.display = 'none'
+        })
+
+        closeebtn.addEventListener('click', function(event){
+            mdal.style.display = 'none'
+        })
+
+
+
+
+    </script>
+    
+    
+
+    
+</body>
+</html>
